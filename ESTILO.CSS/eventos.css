@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Condensed:ital,wght@0,200;1,100;1,200&family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-color: #0c4f5fb4;
+  display: flex;
+  gap: 10px;
+  grid-gap: 20px;
+  justify-content: space-between;
+  padding-inline: 10px;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 10px;
+  padding-block-end: 10px;
+  margin-left: 10px;
+}
+
+.navbar {
+  display: flex;
+  margin-left: 30px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 10px;
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.menu__item a {
+  color: beige;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 3px solid beige;
+  margin-block: 20px;
+}
+
+.menu__item a:hover {
+  background-color: #0c4f5fb4;
+}
+body {
+  overflow-x: hidden;
+}
+
+.contenedor {
+  position: relative;
+  height: 100vh;
+}
+
+.imagenprincipal {
+  background-image: url("../IMG/fm-removebg-preview.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 200px;
+  position: absolute;
+  opacity: 0.3;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+  text-decoration: underline;
+  position: relative;
+  left: 750px;
+}
+
+.shows {
+  background-image: url("../IMG/ticket2024.png");
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30vh;
+  display: grid;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.shows2 {
+  background-image: url("../IMG/ticket2023.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 165%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  top: 250px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+h2 {
+  font-size: 35px;
+  display: flex;
+  text-decoration: underline;
+  position: relative;
+  top: 50px;
+  right: 90px;
+}
+
+button.boton-Youtube {
+  background-image: url("../IMG/youtube_PNG102354-removebg-preview.png");
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  width: 70px;
+  height: 50px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 55px;
+  right: 50px;
+}
+
+button.boton-Youtube:hover {
+  background-color: rgba(173, 119, 119, 0.723);
+  border-radius: 13px;
+}
+
+.otros__eventos {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 45px;
+  text-align: center;
+  text-decoration: underline;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-right: 40px;
+  color: #0a0a0a;
+}
+
+.container__entradas {
+  display: flex;
+  margin-top: 10px;
+  position: relative;
+}
+
+.entradas button {
+  background-image: url("../IMG/ticket-icon-in-grey-colors-voucher-signs-illustration-png__1_-removebg-preview.png");
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding-left: 20%;
+  background: transparent;
+  border: none;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  position: relative;
+  left: 50px;
+}
+
+.icono-entradas {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.entradas:hover {
+  background-color: rgba(86, 86, 74, 0.745);
+}
+
+.tarjetas {
+  display: flex;
+}
+
+.tarjeta__muestra1,
+.tarjeta__muestra2,
+.tarjeta__muestra3 {
+  flex: 1;
+  width: 300px;
+  height: 90vh;
+  border: 3px solid beige;
+  border-radius: 20px;
+  margin-right: 20px;
+  background-color: rgba(20, 20, 13, 0.603);
+  margin-top: 40px;
+  object-fit: contain;
+}
+
+.tarjeta__muestra1 img,
+.tarjeta__muestra2 img,
+.tarjeta__muestra3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.tarjeta__cuerpo,
+.tarjeta__cuerpo2,
+.tarjeta__cuerpo3 {
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+  background-color: grey;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.titulo__tarjeta,
+.titulo__tarjeta2,
+.titulo__tarjeta3 {
+  font-size: 20px;
+  color: black;
+}
+
+.parrafo__tarjeta,
+.parrafo__tarjeta2,
+.parrafo__tarjeta3 {
+  color: rgb(8, 8, 8);
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  color: beige;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 9999;
+  background-image: url("../IMG/whatsapp-png-wazapp-logo-whats-whatsapp-logo-whatsapp-icon-2050-removebg-preview.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+
+.whatsapp-button a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.whatsapp-button img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.whatsapp-button:hover {
+  background-color: darkgreen;
+}
+
+.pie {
+  background-color: #0c4f5fb4;
+  color: rgb(11, 11, 11);
+  text-align: center;
+  height: 30%;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: -21px;
+  position: absolute;
+  opacity: 100;
+  z-index: 1000;
+  transform: translate(-50% -50%);
+  width: 100%;
+  top: 140rem;
+  padding-top: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(12, 12, 12);
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 8px 5px;
+  background-color: rgb(235, 235, 232);
+  padding-block-end: 0;
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  top: 30px;
+  right: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: #0c4f5fb4;
+}
+
+.btn img {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.btn span {
+  display: inline-block;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+.contenedor-redes-sociales {
+  margin-top: 10px;
+}
+
+.redes-sociales {
+  margin-top: 10px;
+}
+
+.redes-sociales button {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding: 0%;
+  background: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Instagram {
+  background-image: url("../IMG/instagram-removebg-preview.png");
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding: 0%;
+  background: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Instagram:hover {
+  background-color: beige;
+}
+
+.Tiktok {
+  background-image: url("../IMG/tiktok-removebg-preview.png");
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding: 0%;
+  background: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Tiktok:hover {
+  background-color: beige;
+}
+
+.Facebook {
+  background-image: url("../IMG/Facebook-Logo-removebg-preview.png");
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding: 0%;
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Facebook:hover {
+  background-color: beige;
+}
+
+.redes-sociales button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.icono-red-social {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

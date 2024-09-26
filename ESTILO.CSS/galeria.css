@@ -1,0 +1,669 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Condensed:ital,wght@0,200;1,100;1,200&family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-color: #0c4f5fb4;
+  display: flex;
+  gap: 20px;
+  grid-gap: 20px;
+  justify-content: space-between;
+  padding-inline: 10px;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 10px;
+  padding-block-end: 10px;
+  margin-left: 10px;
+}
+
+.navbar {
+  display: flex;
+  margin-left: 30px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 10px;
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.menu__item a {
+  color: beige;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 3px solid beige;
+  margin-block: 20px;
+}
+
+.menu__item a:hover {
+  background-color: #0c4f5fb4;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "Flor Fotos Videos"
+    "Flor Fotos Videos2"
+    "Flor Fotos"
+    "Flor Fotos";
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 100vh;
+  text-align: left;
+  font-size: 40px;
+}
+
+.nombre__flor {
+  position: absolute;
+  bottom: 80%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 5px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.nombre__flor:hover {
+  color: beige;
+}
+
+.nombre__alumnos {
+  position: absolute;
+  left: 60%;
+  top: 40px;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.nombre__alumnos:hover {
+  color: beige;
+}
+
+.nombre__videos {
+  position: absolute;
+  bottom: 80%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nombre__videos:hover {
+  color: grey;
+}
+
+.img__flor,
+.img__fotos {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.7;
+  position: relative;
+}
+
+.img__fotos {
+  object-position: left;
+}
+
+.video-container {
+  width: 50vw;
+  object-fit: contain;
+  height: 50vh;
+}
+
+.img__videos {
+  width: 80%;
+  height: 50vh;
+  object-position: center;
+  object-fit: cover;
+  object-position: center;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.7;
+  position: relative;
+}
+
+.Flor {
+  grid-area: Flor;
+  background-image: url("../IMG/florenshow2.jpg");
+  width: 25%;
+}
+
+.Fotos {
+  grid-area: Fotos;
+  background-image: url("../IMG/fotolu.jpg");
+  width: 25%;
+}
+
+.Videos {
+  grid-area: Videos;
+  background-image: url("../VIDEOS/videoalumnos.mp4");
+  width: 50%;
+  height: 50%;
+}
+
+.Videos2 {
+  grid-area: Videos2;
+  background-image: url("../VIDEOS/videocarla.mp4");
+  width: 50%;
+  height: 50%;
+}
+
+.column_Videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 100%;
+}
+.column_Videos2 {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.video-container {
+  width: 100%;
+  margin-bottom: 20px;
+  min-height: 1455px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+.img__flor {
+  opacity: 0.7;
+  position: relative;
+  object-position: center;
+  background-size: cover;
+  background-position: center center;
+}
+
+.img__fotos {
+  opacity: 0.7;
+  position: relative;
+  object-position: center;
+  background-size: cover;
+  background-position: center center;
+}
+
+.img__videos {
+  opacity: 0.7;
+  position: relative;
+  object-position: center;
+  background-size: cover;
+  background-position: center center;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  color: beige;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 9999;
+  background-image: url("../IMG/whatsapp-png-wazapp-logo-whats-whatsapp-logo-whatsapp-icon-2050-removebg-preview.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+
+.whatsapp-button a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.whatsapp-button img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.whatsapp-button:hover {
+  background-color: darkgreen;
+}
+
+.pie {
+  background-color: #0c4f5fb4;
+  color: rgb(11, 11, 11);
+  text-align: center;
+  position: relative;
+  height: 40%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p{
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(12, 12, 12);
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 8px 5px;
+  background-color: rgb(235, 235, 232);
+  padding: 10px 20px;
+}
+.btn:hover {
+  background-color: #0c4f5fb4;
+}
+
+.btn img {
+  width: 25px;
+  height: 25px;
+  margin: 10px 10px 10px 10px;
+}
+
+.btn span {
+  display: inline-block;
+}
+
+.contenedor-redes-sociales {
+  margin-top: 10px;
+}
+
+.redes-sociales {
+  margin-top: 10px;
+}
+
+.redes-sociales button {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding: 0%;
+  background: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Instagram {
+  background-image: url("../IMG/instagram-removebg-preview.png");
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding: 0%;
+  background: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Instagram:hover {
+  background-color: beige;
+}
+
+.Tiktok {
+  background-image: url("../IMG/tiktok-removebg-preview.png");
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding: 0%;
+  background: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Tiktok:hover {
+  background-color: beige;
+}
+
+.Facebook {
+  background-image: url("../IMG/Facebook-Logo-removebg-preview.png");
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding: 0%;
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Facebook:hover {
+  background-color: beige;
+}
+
+.redes-sociales button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.icono-red-social {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+
+  .navbar {
+    margin: 10px 0;
+    height: 100%;
+  }
+
+  .logo {
+    margin: 10px 0;
+    display: grid;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .menu__item a {
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 1px solid beige;
+  }
+
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr);
+    grid-template-rows: repeat(6);
+    grid-template-areas:
+      "Flor Alumnos "
+      "Videos Videos2";
+  }
+
+  .container {
+    width: 90%;
+    height: 100vh;
+  }
+
+  .column_Flor {
+    grid-area: Flor;
+  }
+
+  .column_Alumnos {
+    grid-area: Alumnos;
+  }
+
+  .column_Videos {
+    grid-area: Videos;
+    display: inline-block;
+  }
+
+  .column_Videos2 {
+    grid-area: Videos2;
+    display: inline-block;
+  }
+
+  .nombre__flor {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .nombre__alumnos {
+    font-size: 20px;
+    text-align: center;
+  }
+  .nombre__videos {
+    font-size: 5px;
+    text-align: center;
+    margin-top: 50vh;
+    transform: translate(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+  }
+
+  .img__flor,
+  .img__fotos {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .img__videos {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .btn {
+    font-size: 20px;
+    height: 40px;
+    margin-left: 20px;
+    padding: 10px;
+    left: 10px;
+  }
+
+  .btn img {
+    height: 30px;
+    margin-top: 15px;
+  }
+
+  .redes-sociales button,
+  .Instagram,
+  .Tiktok,
+  .Facebook {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .icono-red-social {
+    width: 30px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+
+  .navbar {
+    margin: 10px 0;
+    height: 100%;
+  }
+
+  .logo {
+    margin: 10px 0;
+    display: grid;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .menu__item a {
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 1px solid beige;
+  }
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr);
+    grid-template-rows: repeat(6);
+    grid-template-areas:
+      "Flor Alumnos "
+      "Videos Videos2";
+  }
+
+  .nombre__flor {
+    font-size: 25px;
+    left: 45px;
+  }
+
+  .nombre__alumnos {
+    font-size: 25px;
+    left: 65px;
+  }
+  .nombre__videos {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50vh;
+    transform: translate(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+  }
+
+  .img__flor,
+  .img__fotos {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .img__flor {
+    margin-left: 5px;
+  }
+  .img__fotos {
+    margin-left: 5px;
+  }
+
+  .img__videos {
+    margin-bottom: 0;
+    height: 150vh;
+    width: 100%;
+    margin-left: 5px;
+  }
+
+  .btn {
+    font-size: 20px;
+    height: 40px;
+    margin-left: 20px;
+    padding: 10px;
+    left: 10px;
+  }
+
+  .pie {
+    margin-top: 120px;
+    padding-bottom: 10px;
+  }
+
+  .btn img {
+    height: 30px;
+    margin-top: 15px;
+  }
+
+  .redes-sociales button,
+  .Instagram,
+  .Tiktok,
+  .Facebook {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .icono-red-social {
+    width: 30px;
+    height: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .img__flor {
+    margin-left: 5px;
+  }
+
+  .img__fotos {
+    margin-left: 5px;
+  }
+
+  .img__videos {
+    margin-left: 5px;
+  }
+
+  .nombre__videos {
+    font-size: 15px;
+  }
+
+  .nombre__videos {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50vh;
+    transform: translate(-50%);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 100%;
+  }
+}
