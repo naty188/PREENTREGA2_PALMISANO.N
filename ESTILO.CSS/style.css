@@ -10,6 +10,11 @@
   font-style: normal;
 }
 
+body {
+  max-width: 1600px;
+  margin: auto;
+}
+
 header {
   background-color: #0c4f5fb4;
   display: flex;
@@ -17,6 +22,7 @@ header {
   grid-gap: 20px;
   justify-content: space-between;
   padding-inline: 10px;
+  max-height: 120px;
 }
 
 .logo {
@@ -28,100 +34,78 @@ header {
 
 .navbar {
   display: flex;
-  margin-left: 30px;
-}
-
-.menu {
-  list-style-type: none;
-  padding: 10px;
   margin-left: 20px;
-  display: flex;
-  gap: 10px;
 }
 
-.menu__item a {
+.navbar a {
+  display: block;
   color: beige;
-  font-size: 22px;
+  font-size: 100%;
   text-decoration: none;
   padding: 10px 15px;
   border: 3px solid beige;
-  margin-block: 20px;
+  margin: 5px 5px;
 }
 
-.menu__item a:hover {
+.navbar a:hover {
   background-color: #0c4f5fb4;
 }
 
-.contenedor {
-  position: relative;
-  height: 100vh;
-}
-.imagenprincipal {
+main {
   background-image: url("../IMG/fm-removebg-preview.png");
   background-repeat: no-repeat;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-inline: 200px;
-  position: absolute;
-  opacity: 0.3;
-  width: 100%;
+  background-size: 45%;
+  background-position:top right;
+
+  
 }
 
-.contenido {
-  position: relative;
-  z-index: 1;
-}
-
-.contenido h1 {
+main h1 {
   color: #040404d8;
-  text-align: start;
+  text-align: left;
   justify-content: right;
-  align-items: start;
   font-size: 40px;
-  position: relative;
-  z-index: 2;
-  top: 100%;
-  transform: translate(50%, 50%);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding-left: 20px;
+
 }
 
-.contenido p {
-  font-size: 25px;
-  justify-content: right;
-  align-items: right;
-  position: relative;
-  left: 870px;
-  white-space: pre-line;
-}
-
-.container {
+.contenedor {
   margin: 0;
-  width: 700px;
-  height: 100vh;
-  display: block;
+  display: flex;
   flex-direction: row;
+  flex-wrap: wrap-reverse;
   justify-content: left;
   justify-items: center;
-  align-items: center;
   object-position: center;
   object-fit: contain;
+
 }
 
-.imagen-primera {
-  width: 800px;
-  height: 500px;
-  object-fit: cover;
+.contenedor > p {
+  font-size: 1.2em;
+  justify-content: right;
+  align-items: right;
+  white-space: pre-line;
+  margin-left: 1%;
+  width: 29%;
+  min-width: 300px;
 }
-.imagen-segunda {
-  width: 800px;
-  height: 500px;
-  object-fit: cover;
+
+.contenedor > #galeria {
+  width: 70%;
 }
+
+
+#carouselExampleDark > .carousel-inner > .carousel-item > img {
+  object-fit: scale-down;
+  object-position: 50% 50%;
+  width: 100%;
+  /*max-width: 0px;*/
+  max-height: min(500px, 50cqw);
+}
+
 
 h2 {
   color: beige;
@@ -129,18 +113,21 @@ h2 {
   font-size: 22px;
 }
 
-.imagen-tercera {
-  width: 800px;
-  height: 500px;
-  object-fit: cover;
-}
 
 .video {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  text-align: center;
   background-color: beige;
+  padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.video > iframe {
+  width: 90%;
+  min-width: 200px;
+  max-width: 800px;
+  min-height: 66px;
+  max-height: 400px;
+  height: calc(45cqw);
 }
 
 .whatsapp-button {
@@ -180,14 +167,13 @@ h2 {
   background-color: darkgreen;
 }
 
-.pie {
+footer {
   background-color: #0c4f5fb4;
   color: rgb(11, 11, 11);
   text-align: center;
-  position: relative;
-  height: 40%;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  padding: 10px;
+  top: 0;
 }
 
 h3 {
@@ -224,108 +210,33 @@ h3 {
 
 .contenedor-redes-sociales {
   margin-top: 10px;
-}
-
-.redes-sociales {
-  margin-top: 10px;
-}
-
-.redes-sociales button {
-  display: inline-block;
-  margin-bottom: 20px;
-  text-decoration: none;
-  padding: 0%;
-  background: transparent;
-  border: none;
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-}
-
-.Instagram {
-  background-image: url("../IMG/instagram-removebg-preview.png");
-  display: inline-block;
-  margin-bottom: 20px;
-  text-decoration: none;
-  padding: 0%;
-  background: transparent;
-  border: none;
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-}
-
-.Instagram:hover {
-  background-color: beige;
-}
-
-.Tiktok {
-  background-image: url("../IMG/tiktok-removebg-preview.png");
-  display: inline-block;
-  margin-bottom: 20px;
-  text-decoration: none;
-  padding: 0%;
-  background: transparent;
-  border: none;
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-}
-
-.Tiktok:hover {
-  background-color: beige;
-}
-
-.Facebook {
-  background-image: url("../IMG/Facebook-Logo-removebg-preview.png");
-  display: inline-block;
-  margin-bottom: 20px;
-  text-decoration: none;
-  padding: 0%;
-  background-color: transparent;
-  border: none;
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.Facebook:hover {
-  background-color: beige;
-}
-
-.redes-sociales button img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   margin-bottom: 10px;
 }
 
 .icono-red-social {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  
+}
+.icono-red-social:hover {
+  background-color: beige;
 }
 
-@media only screen and (max-width: 600px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100px;
-  }
-
+@media only screen and (max-width: 620px) {
+  
   .navbar {
     display: flex;
     justify-content: flex-end;
     height: 100px;
     width: 100vh;
     margin-bottom: 0;
+  }
+
+  .navbar a {
+    font-size: 90%;
+    padding: 7px 7px;
+    border: 2px solid beige;
+    margin: 3px 3px;
   }
 
   .logo {
@@ -336,45 +247,28 @@ h3 {
     width: 90px;
   }
 
-  .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-content: left;
-    gap: 1px;
-    overflow-x: auto;
-  }
-
-  .menu__item {
-    padding-left: 8px;
-    font-size: 2px;
-  }
-
-  .menu__item a {
-    margin-inline: 0px;
-    padding-inline: 0px;
-  }
-
-  main {
-    max-height: 100%;
-    max-width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    box-sizing: border-box;
-  }
-
   .contenedor {
-    height: 100%;
-    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  .contenedor > p {
+    width: 100%;
+  }
+
+  .contenedor > #galeria {
+    width: 100%;
   }
 
   .imagenprincipal {
     width: 100%;
     height: 100%;
     margin-top: 0;
+  }
+
+  .contenido {
+    margin-bottom: 20px;
   }
 
   .contenido h1 {
@@ -389,46 +283,11 @@ h3 {
     left: 60px;
   }
 
-  .container {
-    max-width: 90vw;
-    height: 70%;
-    object-fit: contain;
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    top: 30px;
-  }
-
-  .imagen-primera {
-    width: 100vw;
-    height: 20vh;
-    object-fit: cover;
-  }
-
-  .imagen-segunda {
-    width: 100vw;
-    height: 20vh;
-    object-fit: cover;
-  }
-
-  .imagen-tercera {
-    max-width: 200vw;
-    height: 100vh;
-    object-fit: cover;
-  }
-
   .carousel-caption h5 {
     font-size: 10px;
     padding: 5px;
   }
 
-  .video {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    padding-top: 80px;
-  }
   .whatsapp-button {
     bottom: 10px;
     right: 10px;
@@ -436,191 +295,19 @@ h3 {
     height: 30px;
     padding: 5px 10px;
   }
-
   .whatsapp-button img {
     width: 15px;
     height: 15px;
   }
 
-  .pie {
-    max-height: 100%;
-    overflow: hidden;
-  }
-
-  .btn {
-    font-size: 18px;
-  }
-
-  .btn img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .redes-sociales button img,
-  .Instagram,
-  .Tiktok,
-  .Facebook {
-    width: 40px;
-    height: 20px;
-  }
-
-  .icono-red-social {
-    width: 40px;
-    height: 20px;
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 130px;
-  }
-
-  .navbar {
-    margin: 10px 0;
-    max-height: 150px;
-  }
-
-  .logo {
-    margin: 10px 0;
-    display: grid;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .menu__item a {
-    font-size: 20px;
-    padding: 5px 10px;
-    border: 1px solid beige;
-  }
-
-  main {
-    max-height: 100%;
-    overflow-y: hidden;
-    box-sizing: border-box;
-  }
-
-  .contenedor {
-    height: 100%;
-    max-width: 100%;
-    flex-direction: column;
-    overflow-x: hidden;
-  }
-
-  .imagen-primera {
-    width: 70%;
-    height: 90vh;
-    object-fit: cover;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    padding-top: 180px;
-    overflow-y: hidden;
-    margin-bottom: 10px;
-  }
-
-  .imagen-segunda {
-    width: 70%;
-    height: 90vh;
-    object-fit: cover;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    padding-top: 180px;
-    overflow-y: hidden;
-    margin-bottom: 10px;
-  }
-
-  .imagen-tercera {
-    width: 90vh;
-    height: 90vh;
-    object-fit: cover;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    padding-top: 180px;
-    overflow-y: hidden;
-    margin-bottom: 10px;
-  }
-
-  .imagenprincipal {
-    width: 100%;
-    height: 100%;
-  }
-
-  .contenido h1 {
-    font-size: 40px;
-    top: 0;
-    left: 70px;
-    order: -1;
-  }
-
-  .contenido p {
-    font-size: 16px;
-    left: 60px;
-    margin-left: 10px;
-  }
-
-  .video {
-    max-width: 100%;
-    height: 100%;
-  }
-
-  .btn {
-    font-size: 18px;
-    height: 40px;
-  }
-
-  .redes-sociales button,
-  .Instagram,
-  .Tiktok,
-  .Facebook {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-  }
-
   .icono-red-social {
     width: 30px;
-    height: 50px;
+    height: 30px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  body {
-    overflow-x: hidden;
-  }
 
-  contenido h1 {
-    text-align: left;
-    margin: 0;
-    bottom: auto;
-    display: block;
-    right: 10%;
-    font-size: 28px;
-  }
+@media (max-width:620px) and (min-width:1200px){
 
-  .contenido p {
-    text-align: right;
-    margin: 0;
-    left: auto;
-    bottom: auto;
-    display: block;
-    right: 10%;
-    font-size: 16px;
-  }
 
-  .video {
-    width: 100%;
-    height: 100%;
-    padding-top: 30px;
-  }
-
-  .whatsapp-button {
-    bottom: 20px;
-    right: 20px;
-  }
 }
