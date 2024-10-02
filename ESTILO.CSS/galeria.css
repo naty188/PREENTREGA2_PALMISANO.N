@@ -14,6 +14,7 @@ body {
   max-width: 1600px;
   margin: auto;
   overflow-x: hidden;
+  min-height: 900px;
   
 }
 
@@ -325,8 +326,8 @@ font-size: 15px;
 
   main{
     max-width: 100%;
-    min-height: 470vh;
-   overflow-x: hidden;
+    min-height: 460vh;
+    overflow-x: hidden;
   }
 
   .container {
@@ -440,13 +441,16 @@ h3{
   }
 
   h1{
-   font-size: 11px;
-   text-align:start;
+   font-size: 0.70rem;
+   text-align:center;
+   margin-right: 25px;
   }
 
   h2{
-    font-size: 10px;
+    font-size: 0.70rem;
     text-align: center;
+    margin-right: 25px;
+    
   }
 
   .icono-red-social {
@@ -479,154 +483,7 @@ h3{
   
   }
 
- 
-
-
-
 
   
 }
 
-/*
-@media only screen and (max-width: 768px) {
-
-  body{
-    max-width:768px ;
-    height: auto;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
-
-
-  header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100%;
-  }
-
-  .navbar {
-    margin: 10px 0;
-    height: 100%;
-  }
-
-  .logo {
-    margin: 10px 0;
-    display: grid;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .menu__item a {
-    font-size: 20px;
-    padding: 5px 10px;
-    border: 1px solid beige;
-  }
-  .container {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "Flor" 
-      "Alumnos" 
-      "Videos";
-      
-  }
-
-  .column_Flor {
-    grid-area: Flor;
-   
-  }
-
-  .column_Alumnos {
-    grid-area: Alumnos;
-    
-  }
-
-  .column_Videos {
-    grid-area: Videos;
-    
-  }
-
-
-  .nombre__flor {
-    font-size: 25px;
-    left: 45px;
-  }
-
-  .nombre__alumnos {
-    font-size: 25px;
-    left: 65px;
-  }
-  .nombre__videos {
-    font-size: 25px;
-    text-align: center;
-    margin-top: 50vh;
-    transform: translate(-50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-  }
-
-  .img__flor,
-  .img__fotos {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-  }
-
-  .img__flor {
-    margin-left: 5px;
-  }
-  .img__fotos {
-    margin-left: 5px;
-  }
-
-  .img__videos {
-    margin-bottom: 0;
-    height: 150vh;
-    width: 100%;
-    margin-left: 5px;
-  }
-
-  .btn {
-    font-size: 20px;
-    height: 40px;
-    margin-left: 20px;
-    padding: 10px;
-    left: 10px;
-  }
-
-}*/
-
-/*
-@media only screen and (min-width: 1200px) {
-  .img__flor {
-    margin-left: 5px;
-  }
-
-  .img__fotos {
-    margin-left: 5px;
-  }
-
-  .img__videos {
-    margin-left: 5px;
-  }
-
-  .nombre__videos {
-    font-size: 15px;
-  }
-
-  .nombre__videos {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 50vh;
-    top: 80%;
-    left: 50%;
-    width: 100%;
-  }
-}
-  */
