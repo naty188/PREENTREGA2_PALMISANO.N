@@ -10,14 +10,25 @@
   font-style: normal;
 }
 
+body {
+  max-width: 1600px;
+  margin: auto;
+  overflow-x: hidden;
+  
+}
+
 header {
   background-color: #0c4f5fb4;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   grid-gap: 20px;
   justify-content: space-between;
   padding-inline: 10px;
+  max-height: 120px;
   align-items: center;
+  max-width:100%;
+  min-width: 300px;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -29,130 +40,112 @@ header {
 
 .navbar {
   display: flex;
-  margin-left: 30px;
-}
-
-.menu {
-  list-style-type: none;
-  padding: 10px;
   margin-left: 20px;
-  display: flex;
-  gap: 10px;
+  padding-right: 10px;
+  height: 60px;
+  
 }
 
-.menu__item a {
+.navbar a {
+  display: block;
   color: beige;
-  font-size: 22px;
+  font-size: 100%;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 10px;
   border: 3px solid beige;
-  margin-block: 20px;
+  margin: 5px 5px;
+
+
 }
 
-.menu__item a:hover {
+.navbar a:hover {
   background-color: #0c4f5fb4;
 }
 
-.contenedor {
-  position: relative;
-  height: 100vh;
-}
-.imagenprincipal {
+main {
   background-image: url("../IMG/fm-removebg-preview.png");
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-inline: 200px;
-  position: absolute;
-  opacity: 0.07;
+  background-size: 45%;
+  background-position-x: 110%;
+  min-width: 300px;
+  max-width: 1500px;
+  overflow-x: hidden;
+  
 }
 
-h1 {
+main h1 {
+  color: #040404d8;
+  text-align: left;
+  justify-content: right;
+  font-size: 45px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding-left: 20px;
+
+}
+
+h2 {
   text-align: center;
   color: black;
   font-size: 35px;
-  padding-top: 10px;
-  position: absolute;
+  padding-top: 25px;
   left: 50%;
-  margin-top: 70px;
-  top: 5%;
-}
+  margin-top: 80px;
+
+  }
 
 p {
-  text-align: center;
-  color: black;
-  font-size: 20px;
-  position: relative;
-  margin-top: 40px;
-  margin-left: 40px;
+  font-size: 1.2em;
+  justify-content: right;
+  align-items: right;
+  white-space: pre-line;
+  margin-left: 3%;
+  padding-top: 70px;
+  width: 29%;
+  min-width: 300px;
+  text-shadow: 2px 2px 4px rgba(62, 93, 111, 0.893);
+  overflow-x: hidden;
 }
+
+
 
 .video__muestra {
-  margin-left: 150px;
-  position: absolute;
-  left: 30%;
-  margin-top: 150px;
-  top: 13%;
-}
-
-.grilla {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4 1fr);
-  gap: 20px;
-}
-
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4 1fr);
-  min-height: 100%;
-  grid-template-areas:
-    "fotos videos"
-    "fotos videos"
-    "fotos videos"
-    "fotos videos";
-  position: absolute;
+  display: block;
   width: 100%;
+  max-width: 50%;
+  margin-left: 150px;
+  left: 50%;
+  margin-top: 150px;
+  margin-bottom: 15px;
+  
 }
 
-.container--mis__alumnos,
-.container--mis__alumnos__videos {
-  display: grid;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
+
+.container {
+  display:block;
+  width: 100%;
+  background-color: beige;
+  margin-left: 15px;
+  padding-bottom: px;
+  padding-top: 5px;
 }
+
 
 button.boton-Youtube {
   background-image: url("../IMG/youtube_PNG102354-removebg-preview.png");
   text-decoration: none;
   background-color: transparent;
   border: none;
-  width: 70px;
-  height: 50px;
+  width: 90px;
+  height: 70px;
   background-size: contain;
   background-repeat: no-repeat;
-  top: 50%;
-  left: 50%;
-  z-index: 9999;
-  position: relative;
-  margin-bottom: 150px;
-}
-.container {
-  position: absolute;
-  transform: translate(-50% -50%);
-  top: 50%;
-  left: 50%;
-  text-align: center;
+  display: block;
+  text-align: right;
+  margin-left: 50%;
+  margin-bottom: 15%;
+
+
 }
 
 button.boton-Youtube:hover {
@@ -160,80 +153,57 @@ button.boton-Youtube:hover {
   border-radius: 13px;
 }
 
-h2 {
-  font-size: 35px;
-  text-decoration: underline;
-  display: inline-block;
-  margin-right: 60px;
-  margin-top: 200px;
-  margin-left: 40px;
-}
-
-.Fotos {
-  grid-area: Fotos;
-  background-image: url("../IMG/aixa.jpg");
-  width: 100%;
-  height: 100%;
-}
-
-.videos {
-  grid-area: Videos;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  object-fit: cover;
-  gap: 10px;
-  position: relative;
-}
 
 h3 {
-  display: flex;
-  text-align: end;
-  font-size: 25px;
-  margin-left: 35px;
-  position: relative;
-  top: 90%;
+  font-size: 30px;
+  text-align: left;
+  text-decoration: underline;
+  display: block;
+  color: #0a0a0a;
+  margin: 40px 10px 30px 50px;
+ 
+
+
 }
 
-.imagenes {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-  position: relative;
-  object-fit: cover;
-  top: 465px;
-  height: 165px;
-  width: 43vw;
+
+article{
+ width: 100%;
+ margin-left: 40px;
+ 
 }
 
-.img__fotos {
+
+h4{
+  font-size: 45px;
+  text-align: center;
+  display: block;
+  color: #0a0a0a;
+  margin-bottom:50px ;
+  margin-right: 30px;
+}
+
+ img{
+  display: inline-block;
   width: 100%;
-  max-height: 41vh;
-  object-fit: cover;
-  opacity: 0.9;
-  position: relative;
-  margin-right: 10px;
-  margin-bottom: 20px;
+  max-width: 80%;
+  height:auto;
+  margin: 10px;
+  padding: 0px;
+  object-position: center;
+  background-size: cover;
+
 }
 
-.img__videos {
+article iframe{
+  display: inline-block;
+  max-width: 70%;
   width: 100%;
-  max-height: 90rem;
-  opacity: 0.9;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  gap: 20px;
-  padding-bottom: 70px;
-}
+  margin:10px;
+  gap: 5px;
+  background-size: cover;
+  object-position: center;
 
-.video-container {
-  width: 100%;
-  height: auto;
 }
 
 .whatsapp-button {
@@ -273,26 +243,31 @@ h3 {
   background-color: darkgreen;
 }
 
-.pie {
+footer {
   background-color: #0c4f5fb4;
   color: rgb(11, 11, 11);
   text-align: center;
-  height: 30%;
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: -21px;
-  position: absolute;
-  opacity: 100;
-  z-index: 1000;
-  transform: translate(-50% -50%);
-  width: 100%;
-  top: 140rem;
-  padding-top: 20px;
+  margin-bottom: 0px;
+  padding: 10px;
+  
 }
 
+h5 {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+h6{
+  font-size: 25px;
+}
+
+h7{
+  font-size: 20px;
+  
+}
 .btn {
   display: inline-flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
   color: rgb(12, 12, 12);
   border: none;
@@ -302,16 +277,6 @@ h3 {
   margin: 8px 5px;
   background-color: rgb(235, 235, 232);
   padding-block-end: 0;
-  height: 50px;
-  padding-bottom: 10px;
-}
-
-h4 {
-  text-align: center;
-  font-size: 20px;
-  bottom: 4px;
-  right: 5px;
-  margin-right: 10px;
 }
 .btn:hover {
   background-color: #0c4f5fb4;
@@ -319,109 +284,113 @@ h4 {
 
 .btn img {
   margin-right: 10px;
-  width: 25px;
-  height: 25px;
-  margin-top: 10px;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10px;
 }
 
 .btn span {
   display: inline-block;
 }
 
-h5 {
-  font-size: 20px;
-}
-
-h6 {
-  font-size: 18px;
-}
-
 .contenedor-redes-sociales {
+  display: flex;
+  justify-content: center;
   margin-top: 10px;
-}
-
-.redes-sociales {
-  margin-top: 10px;
-}
-
-.redes-sociales button {
-  display: inline-block;
-  margin-bottom: 20px;
-  text-decoration: none;
-  padding: 0%;
-  background: transparent;
-  border: none;
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-}
-
-.Instagram {
-  background-image: url("../IMG/instagram-removebg-preview.png");
-  display: inline-block;
-  margin-bottom: 20px;
-  text-decoration: none;
-  padding: 0%;
-  background: transparent;
-  border: none;
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-}
-
-.Instagram:hover {
-  background-color: beige;
-}
-
-.Tiktok {
-  background-image: url("../IMG/tiktok-removebg-preview.png");
-  display: inline-block;
-  margin-bottom: 20px;
-  text-decoration: none;
-  padding: 0%;
-  background: transparent;
-  border: none;
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-}
-
-.Tiktok:hover {
-  background-color: beige;
-}
-
-.Facebook {
-  background-image: url("../IMG/Facebook-Logo-removebg-preview.png");
-  display: inline-block;
-  margin-bottom: 20px;
-  text-decoration: none;
-  padding: 0%;
-  background-color: transparent;
-  border: none;
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.Facebook:hover {
-  background-color: beige;
-}
-
-.redes-sociales button img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   margin-bottom: 10px;
+  
 }
 
 .icono-red-social {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+ 
+  
+}
+.icono-red-social:hover {
+  background-color: beige;
+}
+
+@media only screen and (max-width: 640px) {
+
+  main{
+    background-size: 35%;
+  
+  }
+
+    .navbar {
+      display: flex;
+      width: 70vh;
+      margin-bottom: 0;
+      height: 40px;
+      min-width: 700px;
+      text-align: center;
+      
+    }
+  
+    .navbar a {
+      font-size: 80%;
+      padding: 2px 2px;
+      border: 2px solid beige;
+      margin: 3px 3px;
+     display: inline-block;
+     text-align: right;
+     align-items: right;
+     
+    }
+  
+    .logo {
+      margin: 10px 0;
+      display: grid;
+      align-items: flex-start;
+      height: 90px;
+      width: 90px;
+    }
+  
+
+    .video__muestra {
+
+     display: flex;
+     max-width: 30%;
+     justify-content:center;
+     align-items: center;
+     margin-right: 10px;
+
+   }
+
+
+    .container {
+    background-color: white;
+    text-align: center;
+     margin-right:20px ;
+    
+
+   }
+
+h3{
+  font-size: 25px;
+  margin-left: 5px;
+  text-align: center;
+
+}
+
+.boton-Youtube{
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+}
+
+@media (min-width:640px) and (max-width:1200px){
+
+  h2{
+    margin-right: 40px;
+    font-size: 25px;
+  }
+
+  .container{
+    width: 95%;
+  }
+
 }

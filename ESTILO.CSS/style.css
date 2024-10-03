@@ -91,6 +91,7 @@ main h1 {
   margin-left: 1%;
   width: 29%;
   min-width: 300px;
+  text-shadow: 2px 2px 4px rgba(62, 93, 111, 0.893) ;
 }
 
 .contenedor > #galeria {
@@ -223,6 +224,13 @@ h3 {
 }
 
 @media only screen and (max-width: 620px) {
+    
+  main{
+    background-size: 95px;
+    background-position: top right;
+
+  }
+ 
   
   .navbar {
     display: flex;
@@ -255,6 +263,9 @@ h3 {
 
   .contenedor > p {
     width: 100%;
+    font-size: 18px;
+    margin-left: 20px;
+    text-shadow: 2px 2px 4px rgba(62, 93, 111, 0.893) ;
   }
 
   .contenedor > #galeria {
@@ -281,6 +292,7 @@ h3 {
   .contenido p {
     font-size: 16px;
     left: 60px;
+    text-shadow: 2px 2px 4px rgba(62, 93, 111, 0.893) ;
   }
 
   .carousel-caption h5 {
@@ -307,7 +319,3 @@ h3 {
 }
 
 
-@media (max-width:620px) and (min-width:1200px){
-
-
-}
