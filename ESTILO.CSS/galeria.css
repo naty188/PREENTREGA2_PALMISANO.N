@@ -424,26 +424,23 @@ h3{
 
 
 
-  .whatsapp-button {
+  .whatsapp-button a{
     bottom: 10px;
     right: 10px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     padding: 5px 10px;
-    min-width: 35vw;
-    min-height:25px;
-    
+   
   }
   .whatsapp-button img {
-    width: 60px;
-    height: 60px;
+    width: 20px;
+    height: 20px;
    
   }
 
 
   footer{
     width: 100%;
-    min-width: 500px;
   
   }
 
@@ -483,7 +480,7 @@ h3{
 }
 
 
-@media (min-width:640px) and (max-width:1200px){
+@media (min-width:641px) and (max-width:1200px){
 
 
 .video-container{
