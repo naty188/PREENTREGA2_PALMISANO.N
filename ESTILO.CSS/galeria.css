@@ -307,7 +307,7 @@ font-size: 15px;
     padding: 2px 2px;
     border: 2px solid beige;
     margin: 3px 3px;
-   display: inline-block;
+    display: inline-block;
   }
 
   .logo {
@@ -320,14 +320,14 @@ font-size: 15px;
 
   main{
     max-width: 105%;
-    min-height: 460vh;
+    min-height: 450vh;
     overflow-x: hidden;
   }
 
   .container {
     flex: 1;
     width: 100%;
-    height: 45vh;
+    height: 30vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
