@@ -294,19 +294,12 @@ font-size: 15px;
 
 @media only screen and (max-width: 640px) {
 
-  header{
-
-  min-width: 500px;
-  
-  }
   .navbar {
     display: flex;
     width: 40vh;
-    min-width: 500px;
     margin-bottom: 0;
     height: 40px;
-   min-width: 700px;
-   text-align: start;
+    text-align: start;
   }
 
   .navbar a {
