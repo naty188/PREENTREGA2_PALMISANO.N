@@ -15,7 +15,6 @@ body {
   margin: auto;
   overflow-x: hidden;
   min-height: 900px;
-  
 }
 
 header {
@@ -27,9 +26,8 @@ header {
   padding-inline: 10px;
   max-height: 120px;
   align-items: center;
-  max-width:100%;
+  max-width: 100%;
   min-width: 300px;
-  
 }
 
 .logo {
@@ -43,8 +41,6 @@ header {
   display: flex;
   margin-left: 20px;
   height: 60px;
-  
-  
 }
 
 .navbar a {
@@ -55,30 +51,29 @@ header {
   padding: 10px 15px;
   border: 3px solid beige;
   margin: 5px 5px;
-  
 }
 
 .navbar a:hover {
   background-color: #0c4f5fb4;
 }
 
-main{
-max-width: 110%;
-min-height: 230vh;
-height: 300vh;
+main {
+  max-width: 110%;
+  min-height: 230vh;
+  height: 300vh;
 }
 
-.container{
+.container {
   width: 100%;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr)1fr;
+  grid-template-rows: repeat(4, 1fr) 1fr;
   grid-template-areas:
     "Flor Fotos"
     "Videos Videos";
   gap: 10px;
-  margin:10px;
+  margin: 10px;
 }
 
 .column_Flor {
@@ -93,12 +88,10 @@ height: 300vh;
   grid-area: Videos;
 }
 
-
 .video-container {
   height: auto;
   display: flex;
 }
-
 
 .img__flor,
 .img__fotos {
@@ -107,10 +100,8 @@ height: 300vh;
   object-fit: cover;
   object-position: center;
   opacity: 0.7;
-  padding-right:20px;
-  
+  padding-right: 20px;
 }
-
 
 .img__videos {
   display: block;
@@ -125,23 +116,20 @@ height: 300vh;
   background-position: center center;
 }
 
-.video-container{
-width: 100vw;
-min-width:300px ;
-max-width: 1204px;
-gap:10px;
-display: flex;
-flex-direction: row;
-margin-left: 15%;
-padding-top: 60px;
-
+.video-container {
+  width: 100vw;
+  min-width: 300px;
+  max-width: 1204px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15%;
+  padding-top: 60px;
 }
 
-.video-container iframe{
+.video-container iframe {
   width: 150vw;
-
 }
-
 
 .nombre__flor {
   display: inline-flex;
@@ -151,7 +139,6 @@ padding-top: 60px;
   font-size: 30px;
   text-align: center;
   margin-left: 40px;
-  
 }
 
 .nombre__flor:hover {
@@ -169,19 +156,17 @@ padding-top: 60px;
 }
 
 .nombre__alumnos:hover {
-  color:#0c4f5fb4;
+  color: #0c4f5fb4;
 }
 
 .nombre__videos {
   font-size: 30px;
- display: block;
-  
+  display: block;
 }
 
 .nombre__videos:hover {
   color: #0c4f5fb4;
 }
-
 
 .whatsapp-button {
   position: fixed;
@@ -228,19 +213,18 @@ footer {
   padding: 10px;
   bottom: 0;
   left: 0;
-
 }
 
 h1 {
   font-size: 25px;
 }
 
-h2{
-font-size: 20px;
+h2 {
+  font-size: 20px;
 }
 
-h3{
-font-size: 15px;
+h3 {
+  font-size: 15px;
 }
 
 .btn {
@@ -264,7 +248,7 @@ font-size: 15px;
   margin-right: 10px;
   width: 30px;
   height: 30px;
-  margin-left:10px;
+  margin-left: 10px;
 }
 
 .btn span {
@@ -276,24 +260,17 @@ font-size: 15px;
   margin-bottom: 10px;
   min-height: auto;
   min-width: auto;
-  
-
 }
 
 .icono-red-social {
   width: 50px;
   height: 50px;
-
-  
 }
 .icono-red-social:hover {
   background-color: beige;
 }
 
-
-
 @media only screen and (max-width: 640px) {
-
   .navbar {
     display: flex;
     width: 40vh;
@@ -307,7 +284,7 @@ font-size: 15px;
     padding: 2px 2px;
     border: 2px solid beige;
     margin: 3px 3px;
-   display: inline-block;
+    display: inline-block;
   }
 
   .logo {
@@ -318,7 +295,7 @@ font-size: 15px;
     width: 90px;
   }
 
-  main{
+  main {
     max-width: 105%;
     min-height: 460vh;
     overflow-x: hidden;
@@ -331,11 +308,9 @@ font-size: 15px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-      "Flor" 
-      "Alumnos" 
+      "Flor"
+      "Alumnos"
       "Videos";
-    
-      
   }
 
   .column_Flor {
@@ -343,7 +318,6 @@ font-size: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
   }
 
   .column_Alumnos {
@@ -351,7 +325,6 @@ font-size: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
 
   .column_Videos {
@@ -359,21 +332,17 @@ font-size: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
 
   .nombre__flor {
     font-size: 40px;
     text-align: center;
     bottom: 30px;
-   
-    
   }
 
   .nombre__alumnos {
     font-size: 40px;
     text-align: center;
-    
   }
   .nombre__videos {
     font-size: 30px;
@@ -381,14 +350,12 @@ font-size: 15px;
     display: block;
     padding-top: 10px;
     margin-left: 20px;
-    
-
   }
 
   .img__flor,
   .img__fotos {
-   max-width:400px;
-    height:auto;
+    max-width: 400px;
+    height: auto;
     object-fit: cover;
     margin: 10px;
   }
@@ -400,69 +367,53 @@ font-size: 15px;
     margin-right: 50px;
   }
 
-  .video-container{
+  .video-container {
     display: block;
     width: 15%;
-    gap:20px;
-    left:50px;
+    gap: 20px;
+    left: 50px;
     padding-top: 10px;
     margin-right: 50px;
   }
 
-h3{
-  font-size: 20px;
-  padding: 10px;
-}
+  h3 {
+    font-size: 20px;
+    padding: 10px;
+  }
 
-
-
-  .whatsapp-button a{
+  .whatsapp-button a {
     bottom: 10px;
     right: 10px;
     width: 20px;
     height: 20px;
     padding: 5px 10px;
-   
   }
   .whatsapp-button img {
     width: 20px;
     height: 20px;
-   
   }
 
-
-  footer{
+  footer {
     width: 100%;
-  
   }
 
-
-.contenedor-redes-sociales{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  
-}
-
-
-
-  h1{
+  .contenedor-redes-sociales {
     display: flex;
-    font-size:15px;
-    
-  
+    justify-content: center;
+    align-content: center;
   }
 
-
-  h2{
-  font-size: 15px;
-  
+  h1 {
+    display: flex;
+    font-size: 15px;
   }
-  
-  h3{
-  font-size: 15px;
-  
-  
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 15px;
   }
 
   .icono-red-social {
@@ -472,20 +423,14 @@ h3{
   }
 }
 
-
-@media (min-width:641px) and (max-width:1200px){
-
-
-.video-container{
-  display: flex;
-  max-width: 100%;
-  height: 50vh;
-  margin: 10px;
-  gap: 20px;
-
-}
-
-
+@media (min-width: 641px) and (max-width: 1200px) {
+  .video-container {
+    display: flex;
+    max-width: 100%;
+    height: 50vh;
+    margin: 10px;
+    gap: 20px;
+  }
 
   .img__videos {
     max-width: 75%;
@@ -493,24 +438,17 @@ h3{
     object-fit: contain;
     margin-top: 15px;
     margin-left: 45px;
-    
   }
 
- .video-container{
-  display: block; 
-  min-width: 20%;
-  max-width: 80%;
-}
-
- .nombre__videos{
-  
-  font-size: 20px;
-  text-align: end;
-  padding-top:20px ;
-  
+  .video-container {
+    display: block;
+    min-width: 20%;
+    max-width: 80%;
   }
 
-
-  
+  .nombre__videos {
+    font-size: 20px;
+    text-align: end;
+    padding-top: 20px;
+  }
 }
-
